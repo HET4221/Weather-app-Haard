@@ -2,8 +2,8 @@ const { response } = require('express')
 const request = require('request')
 const hbs = require('hbs')
 const path = require('path')
-const geoCode = require('./utils/geoCode');
-const foreCast = require('./utils/foreCast');
+const geoCode = require('./src/utils/geoCode');
+const foreCast = require('./src/utils/foreCast');
 
 const express = require('express')
 const app = express()
