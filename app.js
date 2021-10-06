@@ -2,6 +2,7 @@ const { response } = require('express')
 const request = require('request')
 const hbs = require('hbs')
 const path = require('path')
+const chalk = require('chalk')
 const geoCode = require('./src/utils/geoCode');
 const foreCast = require('./src/utils/foreCast');
 
@@ -66,6 +67,7 @@ app.get('/weather', (req,res)=>{
 
 })
 app.listen(port, ()=>{
+    console.log(chalk.green("Made by: 19DCE099"));
     console.log("listening at port 3000");
 })
 
